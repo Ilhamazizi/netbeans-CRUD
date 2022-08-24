@@ -17,7 +17,7 @@ public class DosenBeraksi {
         input = new Scanner(System.in);
     }
     
-    public void tampilkanDaftraDosen() {
+    public void tampilkanDaftaraDosen() {
         List<Dosen> list = dataAccess.getAll();
         System.out.println("=============DAFTAR DOSEN=================");
         System.out.println();
@@ -101,7 +101,7 @@ public class DosenBeraksi {
             int pilihan = input.nextInt();
             switch (pilihan) {
                 case 1:
-                    dosenBeraksi.tampilkanDaftraDosen();
+                    dosenBeraksi.tampilkanDaftarDosen();
                     break;
                 case 2:
                     dosenBeraksi.insertDosen();
